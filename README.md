@@ -7,7 +7,7 @@ Perfect for real-time or batch face search systems, surveillance-style applicati
 ---
 
 ## 🗂 Project Structure
-<pre><code>```text face_api/ ├── face_db/ │ ├── face_db.json # Main DB of embedded faces │ └── original_faces/ # Original images of added faces ├── target_db/ │ ├── target_db.json # Target DB for pattern-matching │ └── original_targets/ # Original images of target faces ├── upload_dir/ # Bulk embedding input folder ├── tmp/ │ └── input.jpg # Temp file for uploads ├── main.py # 🚀 FastAPI app ├── requirements.txt # Python dependencies ``` </code></pre>
+<pre><code>``` face_api/ |-- face_db/ | |-- face_db.json # Main DB of embedded faces | `-- original_faces/ # Original images of added faces |-- target_db/ | |-- target_db.json # Target DB for pattern-matching | `-- original_targets/ # Original images of target faces |-- upload_dir/ # Bulk embedding input folder |-- tmp/ | `-- input.jpg # Temp file for uploads |-- main.py # 🚀 FastAPI app `-- requirements.txt # Python dependencies ``` </code></pre>
 
 ---
 
