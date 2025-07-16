@@ -39,6 +39,15 @@ face_app.prepare(ctx_id=0)  # Use GPU context if available
 # === FastAPI Initialization ===
 app = FastAPI()
 
+# === Serve Static Files for Target Images ===
+from fastapi.staticfiles import StaticFiles
+
+app.mount(
+    "/target_db/original_targets",  # This becomes the public URL path
+    StaticFiles(directory="target_db/original_targets"),  # This is the actual local directory
+    name="target_images"
+)
+
 # === Face DB Initialization ===
 if DB_PATH.exists():
     with open(DB_PATH) as f:
